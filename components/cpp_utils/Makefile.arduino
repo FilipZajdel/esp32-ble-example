@@ -60,7 +60,7 @@ BLE_FILES= \
 	GeneralUtils.h \
 	GeneralUtils.cpp \
 	HIDTypes.h \
-	HIDKeyboardTypes.h
+	HIDKeyboardTypes.h 
 
 ARDUINO_LIBS=$(HOME)/Arduino/libraries
 

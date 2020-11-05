@@ -22,10 +22,12 @@ class PWM {
 public:
 	PWM(
 		int gpioNum,
-		uint32_t frequency       = 100,
+		uint32_t frequency       = 150,
 		ledc_timer_bit_t bitSize = LEDC_TIMER_10_BIT,
 		ledc_timer_t timer       = LEDC_TIMER_0,
 		ledc_channel_t channel   = LEDC_CHANNEL_0);
+	
+	PWM(int gpioNum, ledc_channel_t channel);
 
 	uint32_t getDuty();
 	uint32_t getFrequency();
